@@ -1,0 +1,56 @@
+{% extends "base.html" %} {% block title %} Discover by Varietal {% endblock %}
+
+{% block content %} 
+<h1> This is the Varietal Page</h1>
+
+
+
+
+
+<!-- Creates the form on the Yahztee Propbability landing page.. 
+
+!! need to figure out how to not allow negative values !! 
+
+-->
+
+<form method = "POST">
+    <br>
+    <h3 align ="left"> Discover Wine based on Desired Varietal </h3>
+    <br>
+    <br>
+    <link rel="stylesheet" href="style.css"/> 
+    <div class="form-group">
+
+        <label for ="Desired Grape Type"> What is the desired Grape Type? </label>
+            <select name = "Desired Type" id="Desired-Type">
+                <option value="Invalid"> Select a Combination</option>
+                <option value="Red">Red</option>
+                <option value="White">White</option>
+                <option value="Rose">Rose</option>
+                <option value="Sparkling">Sparkling</option>
+        
+            </select>
+
+    <br>
+
+        <label for ="Desired Grape Varietal"> What is the desired Grape Varietal? </label>
+            <select name = "Desired Varietal" id="Desired-Varietal">
+                <option value="Invalid"> Select a Combination</option>
+                <option value="Cabernet Sauvignon">Cabernet Sauvignon</option>
+                <option value="Malbec">Malbec</option>
+                <option value="Syrah">Syrah</option>
+
+            </select>
+
+        
+    </div>
+
+    <br />
+    <button type = "submit" class ="btn btn-primary"> Submit </button>
+
+</form>
+
+ 
+
+
+{% endblock %}

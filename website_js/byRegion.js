@@ -26,7 +26,7 @@ function runEnter() {
     //This takes user's input from the html <input>
     // since we assigned it the "user-input" id.
     //It will get the value and store it in our inVal variable
-    var inVal = d3.select("#user-input").property("value");
+    var inVal = d3.select("#region-input").property("value");
 
 
     // this capitalizes the first letter if end-user input a region with all lowercase (italy -> Italy)
@@ -56,7 +56,7 @@ function runEnter() {
         {d3.select("tbody").insert("tr").html(
            // "<td>" + [i+1] + "</td>" + 
             "<td>" + (output[i]['title'])+"</td>"+
-            "<td>" + (output[i]['winery'])+"</td>"+
+            "<td>" + (output[i]['variety'])+"</td>"+
             "<td>" + (output[i]['province'])+"</td>"+
             "<td>" + (output[i]['description'])+"</td>"+
             "<td>" + (output[i]['price'])+"</td>")}

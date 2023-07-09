@@ -39,6 +39,7 @@ function runEnter() {
    results will be stored when #user-input matches the column value we are querying (i.e., country)
      */
     var filteredWines = wines.filter(wines => wines.country.includes(inputValue));
+    console.log(filteredWines);
 
         
 

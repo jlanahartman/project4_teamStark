@@ -1,89 +1,142 @@
 <!DOCTYPE html>
-
-
-
-<html lang=”en”>
-  <head>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <meta charset= "UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <link rel ="stylesheet" type="text/css" href="style.css">
-
-
-
-    
-    
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewpoint" content = "width=device-width" ,initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Stark</title>
+    <style>
+
+        body {
+            background-image: url("static/wine_vin_background.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.8);
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 90px;
+        }
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #183822;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            text-align: center;
+        }
+        .circle img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+        }
+        .circle input {
+            margin-top: 10px;
+            background-color: #fff5f5; /* Change the background color of the text boxes */
+            color: #000000; /* Change the text color inside the boxes */
 
 
-    <link
+        }
+        .container h1 {
+            margin-bottom: 60px; /* Add more space between title and first row */
+            font-family: Arial, sans-serif; /* Change font family */
+            color: #ffffff; /* Change title color */
+            font-size: 51px; /* Adjust font size */
+            font-weight: bold; /* Add font weight */
+        }
 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-    crossorigin="anonymous"
-
-    />
-
-    <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-    crossorigin="anonymous"
-    />
-
-
-
-
-    <title>Document</title>
-
-
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-
 <body>
-    
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbar"
-      >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar">
-        <div class="navbar-nav">
-          
-            <a class="nav-item nav-link" href="home.html">Home</a>
-            <a class="nav-item nav-link" href="byFlavor.html">Discover by Flavor</a>
-            <a class="nav-item nav-link" href="byPairings.html">Discover Pairings</a>
-            <a class="nav-item nav-link" href="byPrice.html">Discover by Price</a>
-            <a class="nav-item nav-link" href="byVarietal.html">Discover by Varietal</a>
-            <a class="nav-item nav-link" href="byRegion.html">Discover by Region</a>
-            <a class="nav-item nav-link" href="contributors.html">Contributors</a>
-
-            
-
-            
-          
-
-          
-        </div>
-      </div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="RqualityPredictor.html">Red Wine Quality Predictor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="WqualityPredictor.html">White Wine Quality Predictor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="byRegion.html">###1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contributors.html">Contributors</a>
+            </li>
+        </ul>
+    </div>
     </nav>
 
+    <div class="container">
+        <h1>Team Stark</h1>
+        <div class="row">
+            <div class="circle">
+                <img src="static/matthew_2.jpg" alt="Matthew">
+                <input type="text" placeholder="Matthew">
+                <input type="text" placeholder="Copello ">
+            </div>
+            <div class="circle">
+                <img src="static/brooke_3.jpg" alt="Brooke">
+                <input type="text" placeholder="Brooke">
+                <input type="text" placeholder="Bentley">
+            </div>
+            <div class="circle">
+                <img src="static/camilla_teamStark.jpg" alt="Camilla">
+                <input type="text" placeholder="Camilla">
+                <input type="text" placeholder="Inhapim">
+            </div>
+        </div>
+        <div class="row">
+            <div class="circle">
+                <img src="static/ram_teamStark.jpg" alt="Ram">
+                <input type="text" placeholder="Ramnath">
+                <input type="text" placeholder="Gowrishankar">
+            </div>
+            <div class="circle">
+                <img src="static/jess_again.jpg" alt="Jess">
+                <input type="text" placeholder="Jessica">
+                <input type="text" placeholder="Hartman">
+            </div>
+            <div class="circle">
+                <img src="static/toyin_teamStark.jpg" alt="Toyin">
+                <input type="text" placeholder="Toyin">
+                <input type="text" placeholder="Olaye">
+            </div>
+            <div class="circle">
+              <img src="static/ram_teamStark.jpg" alt="Luis">
+              <input type="text" placeholder="Luis">
+              <input type="text" placeholder="Aguayo">
+          </div>
+        </div>
+    </div>
+
+    <!-- Any adt'l HTML code -->
+
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>          
-
-
-
-
-
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
-

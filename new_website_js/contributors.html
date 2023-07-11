@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Stark</title>
+    <style>
+
+        body {
+            background-image: url("static/wine_vin_background.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.8);
+
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 15px;
+            }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 90px;
+        }
+        .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #183822;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            text-align: center;
+        }
+        .circle img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+        }
+        .circle em {
+            margin-top: 5px;
+            font-size: 20px;
+            background-color: #abd4b46a;
+            border-radius: 15%; /*Change the background color of the text boxes */
+            color: #392525; /* Change the text color inside the boxes */
+
+
+        }
+        .container h1 {
+            margin-top: 20px;
+            margin-bottom: 40px; /* Add more space between title and first row */
+            font-family: Arial, sans-serif; /* Change font family */
+            color: #ffffff; /* Change title color */
+            font-size: 37px; /* Adjust font size */
+            font-weight: bold; /* Add font weight */
+        
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding-top: 14px; padding-bottom: 16px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav" style="margin-top: 3px;">
+                <a class="nav-item nav-link" href="home.html"> Home</a>
+                <a class="nav-item nav-link" href="RedWineVisuals.html"> Red Wine Visualizations</a>
+                <a class="nav-item nav-link" href="WhiteWineVisuals.html"> White Wine Visualizations</a>
+                <a class="nav-item nav-link" href="Visualizations.html"> Visualizations</a>
+                <a class="nav-item nav-link" href="Contributors.html"> Contributors</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Team Stark</h1>
+        <div class="row">
+            <div class="circle">
+                <img src="static/matthew_2.jpg" alt="Matthew">
+                <em>Matthew</em>
+                <br>
+                <em>Copello</em>
+                <!-- <input type="text" placeholder="Matthew">
+                <input type="text" placeholder="Copello "> -->
+            </div>
+             <div class="circle">
+                <img src="static/jess_again.jpg" alt="Jess">
+                <em>Jessica</em>
+                <br>
+                <em>Hartman</em>
+            </div>
+            <div class="circle">
+                <img src="static/brooke_3.jpg" alt="Brooke">
+                <em>Brooke</em>
+                <br>
+                <em>Bently</em>
+                <!-- <input type="text" placeholder="Brooke">
+                <input type="text" placeholder="Bentley"> -->
+            </div>
+        </div>
+            <div class="row">
+            <div class="circle">
+                <img src="static/camilla_teamStark.jpg" alt="Camilla">
+                <em>Camilla</em>
+                <br>
+                <em>Inhapim</em>
+                <!-- <input type="text" placeholder="Camilla">
+                <input type="text" placeholder="Inhapim"> -->
+            </div>
+        
+            <div class="circle">
+                <img src="static/ram_teamStark.jpg" alt="Ram">
+                <em>Ramnath</em>
+                <br>
+                <em>Gowrishankar</em>
+                <!-- <em>Bently</em>
+                <input type="text" placeholder="Ramnath">
+                <input type="text" placeholder="Gowrishankar"> -->
+            </div>
+         
+            <div class="circle">
+                <img src="static/toyin_teamStark.jpg" alt="Toyin">
+                <em>Toyin</em>
+                <br>
+                <em>Olaye</em>
+                <!-- <input type="text" placeholder="Toyin">
+                <input type="text" placeholder="Olaye"> -->
+            </div>
+            <div class="circle">
+              <img src="static/ram_teamStark.jpg" alt="Luis">
+              <input type="text" placeholder="Luis">
+              <input type="text" placeholder="Aguayo">
+          </div>
+        </div>
+    </div>
+
+    <!-- Any adt'l HTML code -->
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

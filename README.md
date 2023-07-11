@@ -1,1 +1,1 @@
-# project4_teamStark
+For Project 4, Team Stark dives into the quality and chemistry of wines to help locals choose the best wine option for them. Specifically, we analyze Red and White wines based on attributes such as pH, alcohol content, acidity, chlorides, and sulphites. In our website, users are able to choose each specific attribute which results to a specific type of wine. Please see above workbook folders and sheets for how our team made this possible. 

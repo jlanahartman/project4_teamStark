@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+
+}
+
+.section1{
+    height: calc(100vh - 10vh);
+    width: 100%;
+    background: url("satic/wine_grapes.jpg") center/cover;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+.section1 .banner{
+    height: 170px;
+    width: 600px;
+    background: rgba(200,200,200,0.5);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: sans-serif;
+    z-index: 8; 
+
+}
+
+.banner h1{
+    font-size:2em;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+    margin-bottom: 4px;
+    z-index: 2;
+    opacity: .5;
+    transition: .2s;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 50%;
+        right: 4px; 
+        align-items: center;
+        background-color: var(--media-nav-links-background-color);
+        z-index: 1;
+        transform: translateX(50%);
+    }
+
+    .menu {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: #000;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+    transition: .4s;
+}
+ 
+/* Centered text */
+ .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }   
+
+
+ 

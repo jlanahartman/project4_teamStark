@@ -2,4 +2,9 @@ For Project 4, Team Stark dives into the quality and chemistry of wines to help 
 
 In our website, users are able to choose each specific attribute which results to a specific type of wine. Please see above workbook folders and sheets for how our team made this possible. 
 
+
+**Random Forest Tree** 
+
+![Random Forest Tree](https://github.com/jlanahartman/project4_teamStark/blob/main/randomForestTree_5.png)
+
 Link to presentation: https://docs.google.com/presentation/d/1KDInWP2uB051h2uicvLKFUWCMoRkTZ-VURdnKkhqqYg/edit#slide=id.p
